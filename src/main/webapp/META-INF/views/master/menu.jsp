@@ -19,7 +19,9 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="https://www.pokerstars.es/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link2" action="http://weplan.appspot.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link3" action="https://www.eurogamer.es/"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
