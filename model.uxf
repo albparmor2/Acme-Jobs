@@ -299,8 +299,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>196</x>
-      <y>385</y>
+      <x>7</x>
+      <y>476</y>
       <w>217</w>
       <h>63</h>
     </coordinates>
@@ -315,8 +315,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>196</x>
-      <y>294</y>
+      <x>245</x>
+      <y>357</y>
       <w>217</w>
       <h>70</h>
     </coordinates>
@@ -331,8 +331,8 @@ Shout
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>56</x>
-      <y>469</y>
+      <x>7</x>
+      <y>357</y>
       <w>231</w>
       <h>98</h>
     </coordinates>
@@ -343,14 +343,14 @@ Shout
 + deadline: Date {Temporal(TIMESTAMP)}
 + description: String {NotBlank}
 + reward: Money {NotNull}
-+ ticker: String {Unique, NotBlank}</panel_attributes>
++ ticker: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>364</x>
-      <y>483</y>
+      <x>245</x>
+      <y>434</y>
       <w>189</w>
       <h>70</h>
     </coordinates>
@@ -360,6 +360,79 @@ Shout
 + deadline: Date{Temporal(TIMESTAMP)}
 + description: String {NotBlank}
 + goalReward: Enum {NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>469</x>
+      <y>357</y>
+      <w>182</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ CEO: String {NotBlank}
++ activities: String {NotBlank}
++ website: String {URL}
++ contactPhone: String {NotBlank}
++ contactEmail: String {NotBlank, Email}
++ stars: Integer {Min, Max}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>357</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>InvestorRecord
+--
++ name: String {NotBlank}
++ sector:String {NotBlank}
++ investingStatement: Money {NotNull} 
++ stars:Integer {Min, Max}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>434</y>
+      <w>217</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP)}
++ text: String {NotBlank}
++ minReward: Money {NotNull}
++ maxReward: Money {NotNull}
++ ticker: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>245</x>
+      <y>511</y>
+      <w>154</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+goalReward
+--
++ Gold
++ Silver
++ Bronze
+
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
