@@ -143,6 +143,13 @@
 	<property name="stars" value="3"/>
 </bean>
 
+<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+    <property name="name" value="Emilio Quintero"/>
+    <property name="sector" value="Analist"/>
+    <property name="investingStatement" value="€30000.00"/>
+    <property name="stars" value="5"/>
+</bean>
+
  <!-- Company Records -->
  <bean id="companyrecord01" class="acme.entities.companyRecords.CompanyRecord">
  	<property name="name" value="Acme, Inc."/>
@@ -175,6 +182,13 @@
  	<property name="contactPhone" value="+34 (9218) 2032244200"/>
  	<property name="contactEmail" value="ackerman@gmail.com"/>
  	<property name="stars" value="4"/>
+ </bean>
+ 
+ <!-- Costumisation -->
+  <bean id="costumisation01" class="acme.entities.costumisations.Costumisation">
+ 	<property name="spamWord" value="sex,hard core,viagra,cialis,nigeria,you’ve won,million dollar,sexo,
+ 	tú has ganado, millón de dolares"/>
+ 	<property name="threshold" value="1.00"/>
  </bean>
 
 </beans>

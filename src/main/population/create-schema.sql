@@ -63,6 +63,14 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `costumisation` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_word` varchar(255),
+        `threshold` double precision,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `investor_record` (
        `id` integer not null,
         `version` integer not null,
