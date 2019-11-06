@@ -41,7 +41,7 @@
 
 <bean id="announcement01" class="acme.entities.announcements.Announcement">
    <property name="title" value="Sample announcement 01"/>
-   <property name="moment" value="2019/06/10 10:35"/>
+   <property name="moment" value="2019/11/01 10:35"/>
    <property name="moreInfo"><null/></property>
    <property name="text" value="This is the description of a sample announcement"/>
 </bean>
@@ -59,5 +59,122 @@
    <property name="moreInfo" value="http://example.com"/>
    <property name="text" value="This is a very old announcement"/>
 </bean>
+
+<!-- Requestas -->
+
+<bean id="requesta01" class="acme.entities.requestas.Requesta">
+   <property name="title" value="Sample request 01"/>
+   <property name="moment" value="2019/09/10 10:35"/>
+   <property name="deadline" value="2020/09/10 10:35"/>
+   <property name="description" value="This is the description of a sample request"/>
+   <property name="reward" value="€300.0"/>
+   <property name="ticker" value="RALBE-12345"/>
+</bean>
+
+<bean id="requesta02" class="acme.entities.requestas.Requesta">
+   <property name="title" value="Sample request 02"/>
+   <property name="moment" value="2019/05/11 12:30"/>
+   <property name="deadline" value="2020/06/08 10:30"/>
+   <property name="description" value="This is the description of a amazing request"/>
+   <property name="reward" value="€500.0"/>
+   <property name="ticker" value="REMIL-19720"/>
+</bean>
+
+<bean id="requesta03" class="acme.entities.requestas.Requesta">
+   <property name="title" value="Sample request 03"/>
+   <property name="moment" value="2019/07/10 16:00"/>
+   <property name="deadline" value="2020/06/08 14:00"/>
+   <property name="description" value="Example request"/>
+   <property name="reward" value="€435.0"/>
+   <property name="ticker" value="RMARC-44444"/>
+</bean>
+
+<!-- Challenges -->
+
+<bean id="challenge01" class="acme.entities.challenges.Challenge">
+   <property name="title" value="Do level C"/>
+   <property name="deadline" value="2019/11/07 00:00"/>
+   <property name="description" value="Do level C. We have to do all the features for pass the level C."/>
+   <property name="goalReward" value="Bronze"/>
+</bean>
+
+<bean id="challenge02" class="acme.entities.challenges.Challenge">
+   <property name="title" value="Do level B"/>
+   <property name="deadline" value="2019/11/07 00:00"/>
+   <property name="description" value="Do level B. We have to do all the features for pass the level B."/>
+   <property name="goalReward" value="Silver"/>
+</bean>
+
+<bean id="challenge03" class="acme.entities.challenges.Challenge">
+   <property name="title" value="Do level A"/>
+   <property name="deadline" value="2019/11/07 00:00"/>
+   <property name="description" value="Do level A. We have to do all the features for pass the level A."/>
+   <property name="goalReward" value="Gold"/>
+</bean>
+
+<!-- Offers -->
+
+<bean id="offer01" class="acme.entities.offers.Offer">
+	<property name="title" value="sample offer 01"/>
+	<property name="moment" value="2018/10/10 19:10"/>
+	<property name="deadline" value="2020/10/10 19:10"/>
+	<property name="text" value="this is a very cool offer"/>
+	<property name="minReward" value="€100.00"/>
+	<property name="maxReward" value="€300.00"/>
+	<property name="ticker" value="OMARK-44444"/>
+</bean>
+
+<bean id="offer02" class="acme.entities.offers.Offer">
+	<property name="title" value="sample offer 02"/>
+	<property name="moment" value="2018/10/10 19:10"/>
+	<property name="deadline" value="2021/10/10 19:10"/>
+	<property name="text" value="this is a other very cool offer"/>
+	<property name="minReward" value="€1000.00"/>
+	<property name="maxReward" value="€3000.00"/>
+	<property name="ticker" value="OALBR-12345"/>
+</bean>
+
+<!-- Investor Record -->
+
+<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+	<property name="name" value="Marco Antonio"/>
+	<property name="sector" value="engineering"/>
+	<property name="investingStatement" value="€3000.00"/>
+	<property name="stars" value="3"/>
+</bean>
+
+ <!-- Company Records -->
+ <bean id="companyrecord01" class="acme.entities.companyRecords.CompanyRecord">
+ 	<property name="name" value="Acme, Inc."/>
+ 	<property name="sector" value="IT"/>
+ 	<property name="CEO" value="Carlos Ramos"/>
+ 	<property name="activities" value="Portal web de búsqueda de trabajo"/>
+ 	<property name="website" value="http://www.acme-jobs.com"/>
+ 	<property name="contactPhone" value="+34 (900) 234567"/>
+ 	<property name="contactEmail" value="carlosrd98@gmail.com"/>
+ 	<property name="stars"><null/></property>
+ </bean>
+ 
+ <bean id="companyrecord02" class="acme.entities.companyRecords.CompanyRecord">
+ 	<property name="name" value="Semseo"/>
+ 	<property name="sector" value="Marketing"/>
+ 	<property name="CEO" value="Miguel Godino"/>
+ 	<property name="activities" value="Empresa líder en marketing y diseño web"/>
+ 	<property name="website"><null/></property>
+ 	<property name="contactPhone" value="+1 (9243) 537744279"/>
+ 	<property name="contactEmail" value="mgodino@gmail.com"/>
+ 	<property name="stars" value="2"/>
+ </bean>
+ 
+ <bean id="companyrecord03" class="acme.entities.companyRecords.CompanyRecord">
+ 	<property name="name" value="Mikasa, LLC"/>
+ 	<property name="sector" value="Inmobiliario"/>
+ 	<property name="CEO" value="Mikasa Ackerman"/>
+ 	<property name="activities" value="Venta y alquiler de propiedades en toda Sevilla"/>
+ 	<property name="website" value="http://www.mikasa.com"/>
+ 	<property name="contactPhone" value="+34 (9218) 2032244200"/>
+ 	<property name="contactEmail" value="ackerman@gmail.com"/>
+ 	<property name="stars" value="4"/>
+ </bean>
 
 </beans>

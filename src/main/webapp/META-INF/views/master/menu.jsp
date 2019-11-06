@@ -19,13 +19,24 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="https://www.pokerstars.es/"/>
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link2" action="http://weplan.appspot.com/"/>
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link3" action="https://www.eurogamer.es/"/>
+			<acme:menu-suboption code="master.menu.anonymous.announcements" action="/anonymous/announcement/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.company-record" action="/anonymous/company-record/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.investor-record" action="/anonymous/investor-record/list"/>
 		</acme:menu-option>
+
+        <acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+            <acme:menu-suboption code="master.menu.authenticated.announcements" action="/authenticated/announcement/list"/>
+            <acme:menu-suboption code="master.menu.authenticated.company-record" action="/authenticated/company-record/list"/>
+            <acme:menu-suboption code="master.menu.authenticated.investor-record" action="/authenticated/investor-record/list"/>
+            <acme:menu-suboption code="master.menu.authenticated.requestas" action="/authenticated/requesta/list"/>
+            <acme:menu-suboption code="master.menu.authenticated.offers" action="/authenticated/offer/list"/>
+            <acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/challenge/list"/>
+            
+        </acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
